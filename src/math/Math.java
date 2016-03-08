@@ -14,9 +14,10 @@ public final class Math {
 		return x>=y ? x : y;
 	}
 	public static float max(float x, float y) {
+		return x-y>=0.01f ? x : y;
 	}
 	public static double max(double x, double y) {
-
+		return x-y>=0.01d ? x : y;
 	}
 	
 	/* min方法：用于返回两个同类型数据的较小值 */
@@ -33,9 +34,9 @@ public final class Math {
 		return x<=y ? x : y;
 	}
 	public static float min(float x, float y) {
-		
+		return x-y<=0.01f ? x : y;
 	}
 	public static double min(double x, double y) {
-		
+		return x-y<=0.01d ? x : y;
 	}
 }
