@@ -1,4 +1,4 @@
-public final class Math {
+public final class NumerialCompare {
 	
 	/* max方法：用于返回两个同类型数据的较大值 */
 	public static byte max(byte x, byte y) {
