@@ -23,14 +23,16 @@ public final class TrigonometricFunc {
 	public static double sin(double x) {
 		int	negative_one    = -1;
 		double	result_value 	= x;
-		for(int n=2; n<=5; n++) {
+		for(int n=2; n<=5; n++) 
 			result_value += negative_one * ( factorial(2*n-1, x) / factorial(2*n-1) );
-		}
+		return result_value;
 	}
 	public static double cos(double x) {
 		int 	negative_one    = -1;
-		double 	result_value 	= 0.0d;
-		
+		double 	result_value 	=  1;
+		for(int n=1; n<=5; n++) 
+			result_value += negative_one * ( factorial(2*n, x) / factorial(2*n) );
+		return result_value;
 	}
 	public static double tan(double x) {
 		int 	negative_one    = -1;
