@@ -34,7 +34,7 @@ public final class Math {
 		return x-y<=0.01d ? x : y;
 	}
 	
-	// 两个 
+	// 两个递归函数为三角函数计算相关的数据  
 	private static int factorial(int x) {
 		int result_value = 0;
 		if(x==1)  return 1;
@@ -62,15 +62,15 @@ public final class Math {
  		return result_value; 
  	} 
  	public static double cos(double x) { 
- 		int 	negative_one    = -1; 
- 		double 	result_value 	=  1; 
+ 		final int NEGATIVE_ONE  = -1; 
+ 		double 	  result_value 	=  1; 
  		for(int n=1; n<=5; n++)  
- 			result_value += negative_one * ( factorial(2*n, x) / factorial(2*n) ); 
+ 			result_value += NEGATIVE_ONE * ( factorial(2*n, x) / factorial(2*n) ); 
  		return result_value; 
  	} 
  	public static double tan(double x) { 
- 		int 	negative_one    = -1; 
- 		double 	result_value 	= 0.0d; 
+ 		final int NEGATIVE_ONE  = -1; 
+ 		double	  result_value 	= 0.0d; 
  		 
  	} 
 
