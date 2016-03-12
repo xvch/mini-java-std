@@ -1,4 +1,4 @@
-public final class NumerialCompare {
+public final class Math {
 	
 	/* max方法：用于返回两个同类型数据的较大值 */
 	public static byte max(byte x, byte y) {
@@ -12,9 +12,6 @@ public final class NumerialCompare {
 	}
 	public static long max(long x, long y) {
 		return x>=y ? x : y;
-	}
-	public static float max(float x, float y) {
-		return x-y>=0.01f ? x : y;
 	}
 	public static double max(double x, double y) {
 		return x-y>=0.01d ? x : y;
@@ -32,9 +29,6 @@ public final class NumerialCompare {
 	}
 	public static long min(long x, long y) {
 		return x<=y ? x : y;
-	}
-	public static float min(float x, float y) {
-		return x-y<=0.01f ? x : y;
 	}
 	public static double min(double x, double y) {
 		return x-y<=0.01d ? x : y;
